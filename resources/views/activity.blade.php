@@ -107,85 +107,110 @@
         <h1 class="text-2xl font-bold text-gray-900 mb-6">Activity</h1>
 
         <!-- TAB BUTTONS -->
-        <div class="flex gap-6 mb-6">
+        <div class="flex gap-3 mb-8 bg-gray-100 p-1 rounded-xl w-fit">
             <button data-tab="highlights"
-            class="tab-btn pb-3 border-b-2 border-indigo-600 text-indigo-600 font-semibold">
-            Highlights
+                class="tab-btn px-5 py-2 rounded-lg text-gray-500 hover:text-gray-700">
+                ✨ Highlights
             </button>
 
             <button data-tab="finished"
-            class="tab-btn pb-3 text-gray-500 hover:text-gray-700">
-            Finished
+                class="tab-btn px-5 py-2 rounded-lg text-gray-500 hover:text-gray-700">
+                📚 Finished
             </button>
 
             <button data-tab="other"
-            class="tab-btn pb-3 text-gray-500 hover:text-gray-700">
-            Other
+                class="tab-btn px-5 py-2 rounded-lg text-gray-500 hover:text-gray-700">
+                ⏳ Other
             </button>
         </div>
+
+
 
         <!-- TAB CONTENT -->
 
         <!-- HIGHLIGHTS -->
-        <div id="highlights" class="tab-content space-y-4">
+        <div id="highlights" class="tab-content space-y-6">
 
-            <div class="rounded-xl border bg-white p-5 hover:shadow-sm transition">
-            <p class="text-sm text-gray-800 italic">
-                “You do not rise to the level of your goals…”
+        <div class="relative rounded-2xl border bg-white p-6 shadow-sm">
+            <span class="absolute top-4 right-4 text-indigo-100 text-5xl">“</span>
+
+            <p class="text-gray-800 text-lg leading-relaxed italic">
+                You do not rise to the level of your goals. You fall to the level of your systems.
             </p>
 
-            <div class="mt-3 flex items-center justify-between text-xs text-gray-500">
-                <span>Atomic Habits · Chapter 2</span>
+            <div class="mt-6 flex items-center justify-between text-sm text-gray-500">
+                <span class="font-medium text-gray-700">
+                    Atomic Habits · Chapter 2
+                </span>
                 <span>12 Jan 2026</span>
             </div>
-            </div>
+        </div>
 
-            <div class="rounded-xl border bg-white p-5">
-            <p class="text-sm text-gray-800 italic">
-                “Focus on systems instead of goals.”
+        <div class="relative rounded-2xl border bg-white p-6 shadow-sm">
+            <span class="absolute top-4 right-4 text-indigo-100 text-5xl">“</span>
+
+            <p class="text-gray-800 text-lg italic">
+                Focus on systems instead of goals.
             </p>
 
-            <div class="mt-3 flex justify-between text-xs text-gray-500">
-                <span>Atomic Habits · Chapter 3</span>
+            <div class="mt-6 flex justify-between text-sm text-gray-500">
+                <span class="font-medium text-gray-700">
+                    Atomic Habits · Chapter 3
+                </span>
                 <span>15 Jan 2026</span>
             </div>
-            </div>
-
         </div>
+
+    </div>
+
 
         <!-- FINISHED -->
-        <div id="finished" class="tab-content space-y-4 hidden">
+        <div id="finished" class="tab-content hidden space-y-4">
 
-            <div class="flex items-center gap-4 p-4 border rounded-xl bg-white">
-            <img src="/images/books/atomic-habits.jpg"
-                class="w-16 h-24 rounded-md object-cover">
+    <div class="flex items-center gap-5 p-5 border rounded-2xl bg-white hover:shadow-sm transition">
+        <img src="/images/books/atomic-habits.jpg"
+            class="w-20 h-28 rounded-lg object-cover shadow">
 
-            <div class="flex-1">
-                <h3 class="font-semibold text-gray-900">Atomic Habits</h3>
-                <p class="text-sm text-gray-500">James Clear</p>
-                <p class="text-xs text-green-600 mt-1">Finished · 10 Jan 2026</p>
+        <div class="flex-1">
+            <h3 class="text-lg font-semibold text-gray-900">
+                Atomic Habits
+            </h3>
+            <p class="text-sm text-gray-500">James Clear</p>
+
+            <div class="mt-2 inline-flex items-center gap-2 text-xs text-green-700 bg-green-100 px-3 py-1 rounded-full">
+                ✔ Finished · 10 Jan 2026
             </div>
-            </div>
-
         </div>
+
+        <button class="text-sm text-indigo-600 hover:underline">
+            View Details →
+        </button>
+    </div>
+
+</div>
+
 
         <!-- OTHER -->
-        <div id="other" class="tab-content space-y-4 hidden">
+        <div id="other" class="tab-content hidden space-y-4">
 
-            <div class="p-4 border rounded-xl bg-white">
-            <h3 class="font-semibold text-gray-900">
-                Deep Work
-            </h3>
-            <p class="text-sm text-gray-500">
-                Last read: Chapter 4
-            </p>
-
-            <button class="mt-3 text-sm text-indigo-600 hover:underline">
-                Continue Reading
-            </button>
+        <div class="p-5 border rounded-2xl bg-white flex items-center justify-between hover:shadow-sm">
+            <div>
+                <h3 class="text-lg font-semibold text-gray-900">
+                    Deep Work
+                </h3>
+                <p class="text-sm text-gray-500">
+                    Last read: Chapter 4
+                </p>
             </div>
 
+            <button
+                class="px-4 py-2 text-sm rounded-lg bg-indigo-600 text-white hover:bg-indigo-700">
+                Continue Reading
+            </button>
         </div>
+
+    </div>
+
 
         </main>
 
@@ -199,45 +224,52 @@
 
 </div>
 
-</body>
-
 <script>
   const tabButtons = document.querySelectorAll('.tab-btn');
   const tabContents = document.querySelectorAll('.tab-content');
+
+  function setActiveTab(button) {
+    // reset semua tab
+    tabButtons.forEach(btn => {
+      btn.classList.remove(
+        'bg-white',
+        'shadow',
+        'text-indigo-600',
+        'font-semibold'
+      );
+      btn.classList.add('text-gray-500');
+    });
+
+    // aktifkan tab
+    button.classList.add(
+      'bg-white',
+      'shadow',
+      'text-indigo-600',
+      'font-semibold'
+    );
+    button.classList.remove('text-gray-500');
+  }
 
   tabButtons.forEach(button => {
     button.addEventListener('click', () => {
       const target = button.dataset.tab;
 
-      // reset button style
-      tabButtons.forEach(btn => {
-        btn.classList.remove(
-          'border-b-2',
-          'border-indigo-600',
-          'text-indigo-600',
-          'font-semibold'
-        );
-        btn.classList.add('text-gray-500');
-      });
+      // set active tab UI
+      setActiveTab(button);
 
       // hide all content
       tabContents.forEach(content => {
         content.classList.add('hidden');
       });
 
-      // activate button
-      button.classList.add(
-        'border-b-2',
-        'border-indigo-600',
-        'text-indigo-600',
-        'font-semibold'
-      );
-      button.classList.remove('text-gray-500');
-
-      // show content
+      // show active content
       document.getElementById(target).classList.remove('hidden');
     });
   });
+
+  // default active tab saat load
+  setActiveTab(tabButtons[0]);
 </script>
 
+</body>
 </html>

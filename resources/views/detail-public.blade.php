@@ -59,149 +59,119 @@
 
     <div class="mx-auto max-w-2xl px-6 py-12 space-y-6">
 
+    <!-- PAGE CONTENT -->
     <main class="flex-1 overflow-y-auto p-6">
-    
-            <div class="max-w-6xl mx-auto px-6 py-8">
-                {{-- <!-- BREADCRUMB -->
-                <nav class="text-sm text-gray-500 mb-6">
-                <ol class="flex items-center gap-2">
-                    <li>
-                    <a href="/explore" class="hover:text-blue-600">Explore Books</a>
-                    </li>
-                    <li>/</li>
-                    <li>
-                    <a href="/explore/self-improvement" class="hover:text-blue-600">
-                        Self Improvement
-                    </a>
-                    </li>
-                    <li>/</li>
-                    <li class="text-gray-900 font-medium">
-                    Atomic Habits
-                    </li>
-                </ol>
-                </nav> --}}
+        <div class="max-w-6xl mx-auto px-6 py-8">
 
             <!-- HERO -->
-            <div class="flex gap-8">
+            <div class="flex flex-col md:flex-row gap-8">
 
                 <!-- Cover -->
-                <img src="/images/books/atomic-habits.jpg"
-                    class="w-48 h-72 rounded-lg object-cover shadow"
-                    alt="Book Cover">
+                <img src="{{ $book['cover'] }}"
+                    class="w-52 h-80 rounded-xl object-cover shadow-lg"
+                    alt="{{ $book['title'] }}">
 
                 <!-- Info -->
-                <div class="flex flex-col gap-3">
-                <h1 class="text-3xl font-bold text-gray-900">
-                    Atomic Habits
-                </h1>
+                <div class="flex flex-col gap-4 flex-1">
 
-                <p class="text-gray-600">
-                    by James Clear
-                </p>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h1 class="text-3xl font-bold text-gray-900">
+                                {{ $book['title'] }}
+                            </h1>
 
-                <!-- Rating -->
-                <div class="flex items-center gap-1 text-yellow-400">
-                    ★★★★★
-                    <span class="ml-2 text-sm text-gray-600">4.8</span>
-                </div>
+                            <p class="text-gray-600 mt-1">
+                                by {{ $book['author'] }}
+                            </p>
+                        </div>
 
-                <!-- Genre -->
-                <div class="flex gap-2 text-sm">
-                    <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded">
-                    Self Improvement
-                    </span>
-                    <span class="px-2 py-1 bg-green-100 text-green-600 rounded">
-                    Free
-                    </span>
-                </div>
+                        <!-- SAVE BUTTON -->
+                        <button
+                            class="text-xl p-2 rounded-full border
+                                hover:bg-blue-50 hover:text-blue-600 transition"
+                            title="Save Book">
+                            💾
+                        </button>
+                    </div>
 
-                <!-- CTA -->
-                <button type="button"
-                    onclick="window.location.href='{{ route('read') }}'"
-                    class="mt-4 w-fit bg-blue-600 text-white px-6 py-3 rounded-lg
+                    <!-- Rating -->
+                    <div class="flex items-center gap-2 text-yellow-400">
+                        {{ str_repeat('★', $book['rating']) }}
+                        <span class="text-sm text-gray-500">
+                            ({{ $book['rating'] }}/5)
+                        </span>
+                    </div>
+
+                    <!-- Genre + Free -->
+                    <div class="flex flex-wrap gap-2 text-sm">
+                        @foreach ($book['genre'] as $g)
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full">
+                                {{ $g }}
+                            </span>
+                        @endforeach
+
+                        @if ($book['is_free'])
+                            <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full">
+                                Free
+                            </span>
+                        @endif
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="flex gap-4 mt-4">
+                        <button
+                            class="bg-blue-600 text-white px-6 py-3 rounded-lg
                                 font-semibold hover:bg-blue-700 transition">
-                    Read Now
-                </button>
-                </div>
+                            Read Now
+                        </button>
+                    </div>
 
+                    <!-- Meta Info -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 text-sm text-gray-600">
+                        <div>
+                            <p class="font-semibold">Pages</p>
+                            <p>{{ $book['pages'] }}</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Language</p>
+                            <p>{{ $book['language'] }}</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Publisher</p>
+                            <p>{{ $book['publisher'] }}</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Year</p>
+                            <p>{{ $book['published_year'] }}</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
-              <!-- SYNOPSIS -->
+            <!-- SYNOPSIS -->
             <div class="mt-12">
                 <h2 class="text-xl font-semibold text-gray-900 mb-3">
-                Synopsis
+                    Synopsis
                 </h2>
                 <p class="text-gray-700 leading-relaxed">
-                Atomic Habits is a practical guide on how small changes
-                can lead to remarkable results...
+                    {{ $book['synopsis'] }}
                 </p>
             </div>
 
             <!-- ABOUT -->
             <div class="mt-8">
                 <h2 class="text-xl font-semibold text-gray-900 mb-3">
-                About
+                    About This Book
                 </h2>
                 <p class="text-gray-700 leading-relaxed">
-                Written by James Clear, Atomic Habits focuses on building
-                good habits and breaking bad ones...
+                    {{ $book['description'] }}
                 </p>
             </div>
 
-              <!-- NEXT SERIES -->
-            <div class="mt-14">
-                <h2 class="text-xl font-semibold text-gray-900 mb-4">
-                Next in Series
-                </h2>
+        </div>
+    </main>
 
-                <div class="flex gap-4">
-                <div class="w-40">
-                    <img src="/images/books/series-2.jpg"
-                        class="h-56 w-full object-cover rounded-lg">
-                    <h3 class="mt-2 text-sm font-semibold">
-                    Atomic Habits 2
-                    </h3>
-                </div>
-
-                <div class="w-40">
-                    <img src="/images/books/series-3.jpg"
-                        class="h-56 w-full object-cover rounded-lg">
-                    <h3 class="mt-2 text-sm font-semibold">
-                    Atomic Habits 3
-                    </h3>
-                </div>
-                </div>
-            </div>
-            
-              <!-- REVIEWS -->
-            <div class="mt-14">
-                <h2 class="text-xl font-semibold text-gray-900 mb-4">
-                Reviews
-                </h2>
-
-                <div class="space-y-4">
-
-                <div class="border rounded-lg p-4">
-                    <div class="flex items-center gap-3 mb-2">
-                    <img src="/images/avatar.png"
-                        class="w-8 h-8 rounded-full">
-                    <div>
-                        <p class="font-semibold text-sm">vira ariv</p>
-                        <p class="text-yellow-400 text-xs">★★★★★</p>
-                    </div>
-                    </div>
-                    <p class="text-gray-700 text-sm">
-                    Buku ini bener-bener ngerubah cara aku bangun kebiasaan.
-                    </p>
-                </div>
-
-                </div>
-            </div>
-
-            </div> <!-- END max-w -->
-
-
-        </main>
 
     <footer class="bg-gray-75 border-t border-gray-200 mt-24">
         <div class="mx-auto max-w-7xl px-6 lg:px-8 py-12">

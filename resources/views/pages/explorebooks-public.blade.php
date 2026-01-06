@@ -59,634 +59,163 @@
     </header>
 
     <!-- SECTION 1-->
-   <section class="mt-16"> 
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
-        <div class="flex items-center justify-between">
-            <h2 class="text-xl font-bold text-gray-900">
-                Trending Book
-            </h2>
-            <a href="#" class="text-sm font-semibold text-blue-600 hover:underline">
-                See all
-            </a>
-        </div>
-
-        <!-- GRID CARD -->
-        <div class="mt-6 flex flex-wrap gap-x-4 gap-y-6">
-            <!-- CARD -->
-            <a href="/detail-public"
-            class="group block w-40 flex-shrink-0 rounded-xl transition
-                    hover:-translate-y-1 hover:shadow-lg focus:outline-none">
-
-                <div class="relative">
-                    <img src="https://picsum.photos/200/300"
-                        class="h-60 w-full rounded-xl object-cover" />
-
-                    <span
-                        class="absolute top-2 left-2 rounded-full bg-green-600
-                            px-2 py-0.5 text-xs font-semibold text-white">
-                        Free
-                    </span>
-                </div>
-
-                <div class="mt-3 px-1.5 pb-2">
-                    <h3
-                        class="text-sm font-semibold text-gray-900 line-clamp-2
-                            group-hover:text-indigo-600">
-                        Atomic Habits
-                    </h3>
-
-                    <p class="mt-1 text-xs text-gray-500">
-                        James Clear
-                    </p>
-
-                    <div class="mt-2 text-sm text-yellow-500">
-                        ⭐⭐⭐⭐☆
-                    </div>
-                </div>
-            </a>
-
-            <a href="/detail-public"
-            class="group block w-40 flex-shrink-0 rounded-xl transition
-                    hover:-translate-y-1 hover:shadow-lg focus:outline-none">
-
-                <div class="relative">
-                    <img src="https://picsum.photos/200/300"
-                        class="h-60 w-full rounded-xl object-cover" />
-
-                    <span
-                        class="absolute top-2 left-2 rounded-full bg-green-600
-                            px-2 py-0.5 text-xs font-semibold text-white">
-                        Free
-                    </span>
-                </div>
-
-                <div class="mt-3 px-1.5 pb-2">
-                    <h3
-                        class="text-sm font-semibold text-gray-900 line-clamp-2
-                            group-hover:text-indigo-600">
-                        Atomic Habits
-                    </h3>
-
-                    <p class="mt-1 text-xs text-gray-500">
-                        James Clear
-                    </p>
-
-                    <div class="mt-2 text-sm text-yellow-500">
-                        ⭐⭐⭐⭐☆
-                    </div>
-                </div>
-            </a>
-
-            <a href="/detail-public"
-            class="group block w-40 flex-shrink-0 rounded-xl transition
-                    hover:-translate-y-1 hover:shadow-lg focus:outline-none">
-
-                <div class="relative">
-                    <img src="https://picsum.photos/200/300"
-                        class="h-60 w-full rounded-xl object-cover" />
-
-                    <span
-                        class="absolute top-2 left-2 rounded-full bg-green-600
-                            px-2 py-0.5 text-xs font-semibold text-white">
-                        Free
-                    </span>
-                </div>
-
-                <div class="mt-3 px-1.5 pb-2">
-                    <h3
-                        class="text-sm font-semibold text-gray-900 line-clamp-2
-                            group-hover:text-indigo-600">
-                        Atomic Habits
-                    </h3>
-
-                    <p class="mt-1 text-xs text-gray-500">
-                        James Clear
-                    </p>
-
-                    <div class="mt-2 text-sm text-yellow-500">
-                        ⭐⭐⭐⭐☆
-                    </div>
-                </div>
-            </a>
-
-            <a href="/detail-public"
-            class="group block w-40 flex-shrink-0 rounded-xl transition
-                    hover:-translate-y-1 hover:shadow-lg focus:outline-none">
-
-                <div class="relative">
-                    <img src="https://picsum.photos/200/300"
-                        class="h-60 w-full rounded-xl object-cover" />
-
-                    <span
-                        class="absolute top-2 left-2 rounded-full bg-green-600
-                            px-2 py-0.5 text-xs font-semibold text-white">
-                        Free
-                    </span>
-                </div>
-
-                <div class="mt-3 px-1.5 pb-2">
-                    <h3
-                        class="text-sm font-semibold text-gray-900 line-clamp-2
-                            group-hover:text-indigo-600">
-                        Atomic Habits
-                    </h3>
-
-                    <p class="mt-1 text-xs text-gray-500">
-                        James Clear
-                    </p>
-
-                    <div class="mt-2 text-sm text-yellow-500">
-                        ⭐⭐⭐⭐☆
-                    </div>
-                </div>
-            </a>
-
-            <a href="/detail-public"
-            class="group block w-40 flex-shrink-0 rounded-xl transition
-                    hover:-translate-y-1 hover:shadow-lg focus:outline-none">
-
-                <div class="relative">
-                    <img src="https://picsum.photos/200/300"
-                        class="h-60 w-full rounded-xl object-cover" />
-
-                    <span
-                        class="absolute top-2 left-2 rounded-full bg-green-600
-                            px-2 py-0.5 text-xs font-semibold text-white">
-                        Free
-                    </span>
-                </div>
-
-                <div class="mt-3 px-1.5 pb-2">
-                    <h3
-                        class="text-sm font-semibold text-gray-900 line-clamp-2
-                            group-hover:text-indigo-600">
-                        Atomic Habits
-                    </h3>
-
-                    <p class="mt-1 text-xs text-gray-500">
-                        James Clear
-                    </p>
-
-                    <div class="mt-2 text-sm text-yellow-500">
-                        ⭐⭐⭐⭐☆
-                    </div>
-                </div>
-            </a>
-
-            <a href="/detail-public"
-            class="group block w-40 flex-shrink-0 rounded-xl transition
-                    hover:-translate-y-1 hover:shadow-lg focus:outline-none">
-
-                <div class="relative">
-                    <img src="https://picsum.photos/200/300"
-                        class="h-60 w-full rounded-xl object-cover" />
-
-                    <span
-                        class="absolute top-2 left-2 rounded-full bg-green-600
-                            px-2 py-0.5 text-xs font-semibold text-white">
-                        Free
-                    </span>
-                </div>
-
-                <div class="mt-3 px-1.5 pb-2">
-                    <h3
-                        class="text-sm font-semibold text-gray-900 line-clamp-2
-                            group-hover:text-indigo-600">
-                        Atomic Habits
-                    </h3>
-
-                    <p class="mt-1 text-xs text-gray-500">
-                        James Clear
-                    </p>
-
-                    <div class="mt-2 text-sm text-yellow-500">
-                        ⭐⭐⭐⭐☆
-                    </div>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <!-- SECTION 2-->
-   <section class="mt-16"> 
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
-        <div class="flex items-center justify-between">
-            <h2 class="text-xl font-bold text-gray-900">
-                Recommended for you
-            </h2>
-            <a href="#" class="text-sm font-semibold text-blue-600 hover:underline">
-                See all
-            </a>
-        </div>
-
-        <!-- GRID CARD -->
-        <div class="mt-6 flex flex-wrap gap-x-4 gap-y-6">
-            <!-- CARD -->
-            <a href="/detail-public"
-            class="group block w-40 flex-shrink-0 rounded-xl transition
-                    hover:-translate-y-1 hover:shadow-lg focus:outline-none">
-
-                <div class="relative">
-                    <img src="https://picsum.photos/200/300"
-                        class="h-60 w-full rounded-xl object-cover" />
-
-                    <span
-                        class="absolute top-2 left-2 rounded-full bg-green-600
-                            px-2 py-0.5 text-xs font-semibold text-white">
-                        Free
-                    </span>
-                </div>
-
-                <div class="mt-3 px-1.5 pb-2">
-                    <h3
-                        class="text-sm font-semibold text-gray-900 line-clamp-2
-                            group-hover:text-indigo-600">
-                        Atomic Habits
-                    </h3>
-
-                    <p class="mt-1 text-xs text-gray-500">
-                        James Clear
-                    </p>
-
-                    <div class="mt-2 text-sm text-yellow-500">
-                        ⭐⭐⭐⭐☆
-                    </div>
-                </div>
-            </a>
-
-            <a href="/detail-public"
-            class="group block w-40 flex-shrink-0 rounded-xl transition
-                    hover:-translate-y-1 hover:shadow-lg focus:outline-none">
-
-                <div class="relative">
-                    <img src="https://picsum.photos/200/300"
-                        class="h-60 w-full rounded-xl object-cover" />
-
-                    <span
-                        class="absolute top-2 left-2 rounded-full bg-green-600
-                            px-2 py-0.5 text-xs font-semibold text-white">
-                        Free
-                    </span>
-                </div>
-
-                <div class="mt-3 px-1.5 pb-2">
-                    <h3
-                        class="text-sm font-semibold text-gray-900 line-clamp-2
-                            group-hover:text-indigo-600">
-                        Atomic Habits
-                    </h3>
-
-                    <p class="mt-1 text-xs text-gray-500">
-                        James Clear
-                    </p>
-
-                    <div class="mt-2 text-sm text-yellow-500">
-                        ⭐⭐⭐⭐☆
-                    </div>
-                </div>
-            </a>
-
-            <a href="/detail-public"
-            class="group block w-40 flex-shrink-0 rounded-xl transition
-                    hover:-translate-y-1 hover:shadow-lg focus:outline-none">
-
-                <div class="relative">
-                    <img src="https://picsum.photos/200/300"
-                        class="h-60 w-full rounded-xl object-cover" />
-
-                    <span
-                        class="absolute top-2 left-2 rounded-full bg-green-600
-                            px-2 py-0.5 text-xs font-semibold text-white">
-                        Free
-                    </span>
-                </div>
-
-                <div class="mt-3 px-1.5 pb-2">
-                    <h3
-                        class="text-sm font-semibold text-gray-900 line-clamp-2
-                            group-hover:text-indigo-600">
-                        Atomic Habits
-                    </h3>
-
-                    <p class="mt-1 text-xs text-gray-500">
-                        James Clear
-                    </p>
-
-                    <div class="mt-2 text-sm text-yellow-500">
-                        ⭐⭐⭐⭐☆
-                    </div>
-                </div>
-            </a>
-
-            <a href="/detail-public"
-            class="group block w-40 flex-shrink-0 rounded-xl transition
-                    hover:-translate-y-1 hover:shadow-lg focus:outline-none">
-
-                <div class="relative">
-                    <img src="https://picsum.photos/200/300"
-                        class="h-60 w-full rounded-xl object-cover" />
-
-                    <span
-                        class="absolute top-2 left-2 rounded-full bg-green-600
-                            px-2 py-0.5 text-xs font-semibold text-white">
-                        Free
-                    </span>
-                </div>
-
-                <div class="mt-3 px-1.5 pb-2">
-                    <h3
-                        class="text-sm font-semibold text-gray-900 line-clamp-2
-                            group-hover:text-indigo-600">
-                        Atomic Habits
-                    </h3>
-
-                    <p class="mt-1 text-xs text-gray-500">
-                        James Clear
-                    </p>
-
-                    <div class="mt-2 text-sm text-yellow-500">
-                        ⭐⭐⭐⭐☆
-                    </div>
-                </div>
-            </a>
-
-            <a href="/detail-public"
-            class="group block w-40 flex-shrink-0 rounded-xl transition
-                    hover:-translate-y-1 hover:shadow-lg focus:outline-none">
-
-                <div class="relative">
-                    <img src="https://picsum.photos/200/300"
-                        class="h-60 w-full rounded-xl object-cover" />
-
-                    <span
-                        class="absolute top-2 left-2 rounded-full bg-green-600
-                            px-2 py-0.5 text-xs font-semibold text-white">
-                        Free
-                    </span>
-                </div>
-
-                <div class="mt-3 px-1.5 pb-2">
-                    <h3
-                        class="text-sm font-semibold text-gray-900 line-clamp-2
-                            group-hover:text-indigo-600">
-                        Atomic Habits
-                    </h3>
-
-                    <p class="mt-1 text-xs text-gray-500">
-                        James Clear
-                    </p>
-
-                    <div class="mt-2 text-sm text-yellow-500">
-                        ⭐⭐⭐⭐☆
-                    </div>
-                </div>
-            </a>
-
-            <a href="/detail-public"
-            class="group block w-40 flex-shrink-0 rounded-xl transition
-                    hover:-translate-y-1 hover:shadow-lg focus:outline-none">
-
-                <div class="relative">
-                    <img src="https://picsum.photos/200/300"
-                        class="h-60 w-full rounded-xl object-cover" />
-
-                    <span
-                        class="absolute top-2 left-2 rounded-full bg-green-600
-                            px-2 py-0.5 text-xs font-semibold text-white">
-                        Free
-                    </span>
-                </div>
-
-                <div class="mt-3 px-1.5 pb-2">
-                    <h3
-                        class="text-sm font-semibold text-gray-900 line-clamp-2
-                            group-hover:text-indigo-600">
-                        Atomic Habits
-                    </h3>
-
-                    <p class="mt-1 text-xs text-gray-500">
-                        James Clear
-                    </p>
-
-                    <div class="mt-2 text-sm text-yellow-500">
-                        ⭐⭐⭐⭐☆
-                    </div>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <!-- SECTION 3-->
-   <section class="mt-16"> 
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
-        <div class="flex items-center justify-between">
-            <h2 class="text-xl font-bold text-gray-900">
-                New Releases
-            </h2>
-            <a href="#" class="text-sm font-semibold text-blue-600 hover:underline">
-                See all
-            </a>
-        </div>
-
-        <!-- GRID CARD -->
-        <div class="mt-6 flex flex-wrap gap-x-4 gap-y-6">
-            <!-- CARD -->
-            <a href="/detail-public"
-            class="group block w-40 flex-shrink-0 rounded-xl transition
-                    hover:-translate-y-1 hover:shadow-lg focus:outline-none">
-
-                <div class="relative">
-                    <img src="https://picsum.photos/200/300"
-                        class="h-60 w-full rounded-xl object-cover" />
-
-                    <span
-                        class="absolute top-2 left-2 rounded-full bg-green-600
-                            px-2 py-0.5 text-xs font-semibold text-white">
-                        Free
-                    </span>
-                </div>
-
-                <div class="mt-3 px-1.5 pb-2">
-                    <h3
-                        class="text-sm font-semibold text-gray-900 line-clamp-2
-                            group-hover:text-indigo-600">
-                        Atomic Habits
-                    </h3>
-
-                    <p class="mt-1 text-xs text-gray-500">
-                        James Clear
-                    </p>
-
-                    <div class="mt-2 text-sm text-yellow-500">
-                        ⭐⭐⭐⭐☆
-                    </div>
-                </div>
-            </a>
-
-            <a href="/detail-public"
-            class="group block w-40 flex-shrink-0 rounded-xl transition
-                    hover:-translate-y-1 hover:shadow-lg focus:outline-none">
-
-                <div class="relative">
-                    <img src="https://picsum.photos/200/300"
-                        class="h-60 w-full rounded-xl object-cover" />
-
-                    <span
-                        class="absolute top-2 left-2 rounded-full bg-green-600
-                            px-2 py-0.5 text-xs font-semibold text-white">
-                        Free
-                    </span>
-                </div>
-
-                <div class="mt-3 px-1.5 pb-2">
-                    <h3
-                        class="text-sm font-semibold text-gray-900 line-clamp-2
-                            group-hover:text-indigo-600">
-                        Atomic Habits
-                    </h3>
-
-                    <p class="mt-1 text-xs text-gray-500">
-                        James Clear
-                    </p>
-
-                    <div class="mt-2 text-sm text-yellow-500">
-                        ⭐⭐⭐⭐☆
-                    </div>
-                </div>
-            </a>
-
-            <a href="/detail-public"
-            class="group block w-40 flex-shrink-0 rounded-xl transition
-                    hover:-translate-y-1 hover:shadow-lg focus:outline-none">
-
-                <div class="relative">
-                    <img src="https://picsum.photos/200/300"
-                        class="h-60 w-full rounded-xl object-cover" />
-
-                    <span
-                        class="absolute top-2 left-2 rounded-full bg-green-600
-                            px-2 py-0.5 text-xs font-semibold text-white">
-                        Free
-                    </span>
-                </div>
-
-                <div class="mt-3 px-1.5 pb-2">
-                    <h3
-                        class="text-sm font-semibold text-gray-900 line-clamp-2
-                            group-hover:text-indigo-600">
-                        Atomic Habits
-                    </h3>
-
-                    <p class="mt-1 text-xs text-gray-500">
-                        James Clear
-                    </p>
-
-                    <div class="mt-2 text-sm text-yellow-500">
-                        ⭐⭐⭐⭐☆
-                    </div>
-                </div>
-            </a>
-
-            <a href="/detail-public"
-            class="group block w-40 flex-shrink-0 rounded-xl transition
-                    hover:-translate-y-1 hover:shadow-lg focus:outline-none">
-
-                <div class="relative">
-                    <img src="https://picsum.photos/200/300"
-                        class="h-60 w-full rounded-xl object-cover" />
-
-                    <span
-                        class="absolute top-2 left-2 rounded-full bg-green-600
-                            px-2 py-0.5 text-xs font-semibold text-white">
-                        Free
-                    </span>
-                </div>
-
-                <div class="mt-3 px-1.5 pb-2">
-                    <h3
-                        class="text-sm font-semibold text-gray-900 line-clamp-2
-                            group-hover:text-indigo-600">
-                        Atomic Habits
-                    </h3>
-
-                    <p class="mt-1 text-xs text-gray-500">
-                        James Clear
-                    </p>
-
-                    <div class="mt-2 text-sm text-yellow-500">
-                        ⭐⭐⭐⭐☆
-                    </div>
-                </div>
-            </a>
-
-            <a href="/detail-public"
-            class="group block w-40 flex-shrink-0 rounded-xl transition
-                    hover:-translate-y-1 hover:shadow-lg focus:outline-none">
-
-                <div class="relative">
-                    <img src="https://picsum.photos/200/300"
-                        class="h-60 w-full rounded-xl object-cover" />
-
-                    <span
-                        class="absolute top-2 left-2 rounded-full bg-green-600
-                            px-2 py-0.5 text-xs font-semibold text-white">
-                        Free
-                    </span>
-                </div>
-
-                <div class="mt-3 px-1.5 pb-2">
-                    <h3
-                        class="text-sm font-semibold text-gray-900 line-clamp-2
-                            group-hover:text-indigo-600">
-                        Atomic Habits
-                    </h3>
-
-                    <p class="mt-1 text-xs text-gray-500">
-                        James Clear
-                    </p>
-
-                    <div class="mt-2 text-sm text-yellow-500">
-                        ⭐⭐⭐⭐☆
-                    </div>
-                </div>
-            </a>
-
-            <a href="/detail-public"
-            class="group block w-40 flex-shrink-0 rounded-xl transition
-                    hover:-translate-y-1 hover:shadow-lg focus:outline-none">
-
-                <div class="relative">
-                    <img src="https://picsum.photos/200/300"
-                        class="h-60 w-full rounded-xl object-cover" />
-
-                    <span
-                        class="absolute top-2 left-2 rounded-full bg-green-600
-                            px-2 py-0.5 text-xs font-semibold text-white">
-                        Free
-                    </span>
-                </div>
-
-                <div class="mt-3 px-1.5 pb-2">
-                    <h3
-                        class="text-sm font-semibold text-gray-900 line-clamp-2
-                            group-hover:text-indigo-600">
-                        Atomic Habits
-                    </h3>
-
-                    <p class="mt-1 text-xs text-gray-500">
-                        James Clear
-                    </p>
-
-                    <div class="mt-2 text-sm text-yellow-500">
-                        ⭐⭐⭐⭐☆
-                    </div>
-                </div>
-            </a>
-        </div>
-    </section>
+    <section class="mt-16"> 
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
+            <div class="flex items-center justify-between">
+                <h2 class="text-xl font-bold text-gray-900">
+                    Trending Book
+                </h2>
+                <a href="#" class="text-sm font-semibold text-blue-600 hover:underline">
+                    See all
+                </a>
+            </div>
+
+            <div class="mt-6 flex flex-wrap gap-x-4 gap-y-6">
+                @foreach ($trendingBooks as $book)
+                    <a href="{{ route('books.detail.public', $book['slug']) }}"
+                    class="group block w-40 flex-shrink-0 rounded-xl transition
+                            hover:-translate-y-1 hover:shadow-lg focus:outline-none">
+
+                        <div class="relative">
+                            <img src="{{ $book['cover'] }}"
+                                class="h-60 w-full rounded-xl object-cover" />
+
+                            @if ($book['is_free'])
+                                <span
+                                    class="absolute top-2 left-2 rounded-full bg-green-600
+                                        px-2 py-0.5 text-xs font-semibold text-white">
+                                    Free
+                                </span>
+                            @endif
+                        </div>
+
+                        <div class="mt-3 px-1.5 pb-2">
+                            <h3
+                                class="text-sm font-semibold text-gray-900 line-clamp-2
+                                    group-hover:text-indigo-600">
+                                {{ $book['title'] }}
+                            </h3>
+
+                            <p class="mt-1 text-xs text-gray-500">
+                                {{ $book['author'] }}
+                            </p>
+
+                            <div class="mt-2 text-sm text-yellow-500">
+                                {{ str_repeat('⭐', $book['rating']) }}
+                            </div>
+                        </div>
+                    </a>
+                @endforeach
+            </div>
+
+        </section>
+
+        <!-- SECTION 2-->
+    <section class="mt-16"> 
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
+            <div class="flex items-center justify-between">
+                <h2 class="text-xl font-bold text-gray-900">
+                    Recommended for you
+                </h2>
+                <a href="#" class="text-sm font-semibold text-blue-600 hover:underline">
+                    See all
+                </a>
+            </div>
+
+            <!-- GRID CARD -->
+            <div class="mt-6 flex flex-wrap gap-x-4 gap-y-6">
+                @foreach ($recommendedBooks as $book)
+                    <a href="{{ route('books.detail.public', $book['slug']) }}"
+                    class="group block w-40 flex-shrink-0 rounded-xl transition
+                            hover:-translate-y-1 hover:shadow-lg focus:outline-none">
+
+                        <div class="relative">
+                            <img src="{{ $book['cover'] }}"
+                                class="h-60 w-full rounded-xl object-cover" />
+
+                            @if ($book['is_free'])
+                                <span
+                                    class="absolute top-2 left-2 rounded-full bg-green-600
+                                        px-2 py-0.5 text-xs font-semibold text-white">
+                                    Free
+                                </span>
+                            @endif
+                        </div>
+
+                        <div class="mt-3 px-1.5 pb-2">
+                            <h3
+                                class="text-sm font-semibold text-gray-900 line-clamp-2
+                                    group-hover:text-indigo-600">
+                                {{ $book['title'] }}
+                            </h3>
+
+                            <p class="mt-1 text-xs text-gray-500">
+                                {{ $book['author'] }}
+                            </p>
+
+                            <div class="mt-2 text-sm text-yellow-500">
+                                {{ str_repeat('⭐', $book['rating']) }}
+                            </div>
+                        </div>
+                    </a>
+                @endforeach
+            </div>
+        </section>
+
+        <!-- SECTION 3-->
+    <section class="mt-16"> 
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
+            <div class="flex items-center justify-between">
+                <h2 class="text-xl font-bold text-gray-900">
+                    New Releases
+                </h2>
+                <a href="#" class="text-sm font-semibold text-blue-600 hover:underline">
+                    See all
+                </a>
+            </div>
+
+            <!-- GRID CARD -->
+            <div class="mt-6 flex flex-wrap gap-x-4 gap-y-6">
+                @foreach ($newReleases as $book)
+                    <a href="{{ route('books.detail.public', $book['slug']) }}"
+                    class="group block w-40 flex-shrink-0 rounded-xl transition
+                            hover:-translate-y-1 hover:shadow-lg focus:outline-none">
+
+                        <div class="relative">
+                            <img src="{{ $book['cover'] }}"
+                                class="h-60 w-full rounded-xl object-cover" />
+
+                            @if ($book['is_free'])
+                                <span
+                                    class="absolute top-2 left-2 rounded-full bg-green-600
+                                        px-2 py-0.5 text-xs font-semibold text-white">
+                                    Free
+                                </span>
+                            @endif
+                        </div>
+
+                        <div class="mt-3 px-1.5 pb-2">
+                            <h3
+                                class="text-sm font-semibold text-gray-900 line-clamp-2
+                                    group-hover:text-indigo-600">
+                                {{ $book['title'] }}
+                            </h3>
+
+                            <p class="mt-1 text-xs text-gray-500">
+                                {{ $book['author'] }}
+                            </p>
+
+                            <div class="mt-2 text-sm text-yellow-500">
+                                {{ str_repeat('⭐', $book['rating']) }}
+                            </div>
+                        </div>
+                    </a>
+                @endforeach
+            </div>
+        </section>
 
     </div>
     </div>

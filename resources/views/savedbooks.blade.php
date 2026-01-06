@@ -119,78 +119,60 @@
             <!-- BOOK GRID -->
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
 
-                <!-- CARD -->
-                <div class="bg-white rounded-xl p-3 shadow-sm hover:shadow-md transition">
+                @forelse ($savedBooks as $book)
+                    <div class="bg-white rounded-xl p-3 shadow-sm hover:shadow-md transition">
 
-                <!-- Cover -->
-                <img src="/images/books/atomic-habits.jpg"
-                    alt="Atomic Habits"
-                    class="w-full h-60 object-cover rounded-lg mb-3">
+                        <!-- Cover -->
+                        <img src="{{ $book['cover'] }}"
+                            alt="{{ $book['title'] }}"
+                            class="w-full h-60 object-cover rounded-lg mb-3">
 
-                <!-- Title -->
-                <h3 class="text-sm font-semibold text-gray-900 leading-tight">
-                    Atomic Habits
-                </h3>
+                        <!-- Title -->
+                        <h3 class="text-sm font-semibold text-gray-900 leading-tight line-clamp-2">
+                            {{ $book['title'] }}
+                        </h3>
 
-                <!-- Author -->
-                <p class="text-xs text-gray-500 mt-1">
-                    James Clear
-                </p>
+                        <!-- Author -->
+                        <p class="text-xs text-gray-500 mt-1">
+                            {{ $book['author'] }}
+                        </p>
 
-                <!-- Rating -->
-                <div class="flex items-center gap-1 text-yellow-400 text-sm mt-1">
-                    ★★★★☆
-                    <span class="text-xs text-gray-500 ml-1">4.8</span>
-                </div>
+                        <!-- Rating -->
+                        <div class="flex items-center gap-1 text-yellow-400 text-sm mt-1">
+                            {{ str_repeat('★', $book['rating']) }}
+                            <span class="text-xs text-gray-500 ml-1">
+                                {{ number_format($book['rating'], 1) }}
+                            </span>
+                        </div>
 
-                <!-- Genre -->
-                <span class="inline-block mt-2 px-2 py-1 text-xs
-                            bg-blue-100 text-blue-600 rounded-full">
-                    Self Improvement
-                </span>
+                        <!-- Genre -->
+                        <div class="flex flex-wrap gap-1 mt-2">
+                            @foreach ($book['genre'] as $genre)
+                                <span class="px-2 py-0.5 text-xs rounded-full
+                                            bg-blue-100 text-blue-600">
+                                    {{ $genre }}
+                                </span>
+                            @endforeach
+                        </div>
 
-                <!-- CTA -->
-                <button class="mt-3 w-full bg-blue-600 text-white
+                        <!-- CTA -->
+                        <button
+                            onclick="window.location.href='{{ route('read', $book['id']) }}'"
+                            class="mt-3 w-full bg-blue-600 text-white
                                 text-sm py-2 rounded-lg
                                 hover:bg-blue-700 transition">
-                    Continue Reading
-                </button>
+                            Continue Reading
+                        </button>
 
-                </div>
-
-                <!-- DUPLICATE CARD -->
-                <div class="bg-white rounded-xl p-3 shadow-sm hover:shadow-md transition">
-
-                <img src="/images/books/deep-work.jpg"
-                    class="w-full h-60 object-cover rounded-lg mb-3">
-
-                <h3 class="text-sm font-semibold">
-                    Deep Work
-                </h3>
-
-                <p class="text-xs text-gray-500 mt-1">
-                    Cal Newport
-                </p>
-
-                <div class="flex items-center gap-1 text-yellow-400 text-sm mt-1">
-                    ★★★★☆
-                    <span class="text-xs text-gray-500 ml-1">4.5</span>
-                </div>
-
-                <span class="inline-block mt-2 px-2 py-1 text-xs
-                            bg-purple-100 text-purple-600 rounded-full">
-                    Productivity
-                </span>
-
-                <button class="mt-3 w-full bg-blue-600 text-white
-                                text-sm py-2 rounded-lg
-                                hover:bg-blue-700 transition">
-                    Continue Reading
-                </button>
-
-                </div>
+                    </div>
+                @empty
+                    <p class="col-span-full text-center text-gray-500">
+                        No saved books yet.
+                    </p>
+                @endforelse
 
             </div>
+
 
             </div>
 
