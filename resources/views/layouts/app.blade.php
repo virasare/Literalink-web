@@ -21,6 +21,14 @@
 
 <body class="font-sans antialiased">
 
+    @include('components.header')
+
+    <main class="min-h-screen">
+        @yield('content')
+    </main>
+
+    @include('components.footer')
+
 
     <!- Page Heading ->
         @if (isset($header))
@@ -43,5 +51,3 @@
         </div>
     </div>
 </body>
-
-</html>
