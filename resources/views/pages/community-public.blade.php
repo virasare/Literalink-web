@@ -7,7 +7,7 @@
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <title>Explore Books</title>
+    <title>Literalink</title>
 </head>
     <body>
     {{--  Wadah utama dengan warna latar belakang  --}}
@@ -42,17 +42,14 @@
 
             <!-- Login link for larger screens -->
             <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-x-4">
-                <!-- Sign Up (text only) -->
-                <a href="#"
-                class="text-sm font-semibold text-gray-700 hover:text-gray-900">
+                <a href="{{ route('register') }}"
+                    class="text-sm font-semibold text-gray-700 hover:text-gray-900">
                     Sign up
                 </a>
 
                 <!-- Login (button) -->
-                <a href="#"
-                class="rounded-md bg-blue-600 px-4 py-2
-                        text-sm font-semibold text-white
-                        hover:bg-blue-700 transition">
+                <a href="{{ route('login') }}"
+                    class="rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition">
                     Log in
                 </a>
             </div>
@@ -281,8 +278,8 @@
         <div class="flex items-start justify-between">
             <div class="flex gap-3">
                 <img src="https://i.pravatar.cc/40"
-                     class="h-10 w-10 rounded-full"
-                     alt="Profile">
+                    class="h-10 w-10 rounded-full"
+                    alt="Profile">
 
                 <div>
                     <p class="text-sm font-semibold">Ayu Lestari</p>
