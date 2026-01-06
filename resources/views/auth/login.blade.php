@@ -4,74 +4,73 @@
     <meta charset="UTF-8">
     <title>Login – Literalink</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Tailwind CSS -->
     @vite('resources/css/app.css')
 </head>
 <body class="bg-white">
 
 <div class="min-h-screen grid grid-cols-1 lg:grid-cols-2">
-    <!-- LEFT : Illustration -->
+
+    <!-- LEFT -->
     <div class="hidden lg:flex items-center justify-center bg-gray-50">
         <img src="{{ asset('images/login.png') }}"
-             alt="Login Illustration"
-             class="max-w-md w-full">
+             class="max-w-sm w-full"
+             alt="Login Illustration">
     </div>
 
-    <!-- RIGHT : Login Form -->
-    <div class="flex items-center justify-center px-6">
-        <div class="w-full max-w-md">
-            <!-- Title -->
-            <h1 class="text-3xl font-bold text-gray-900">
-                Login
+    <!-- RIGHT -->
+    <div class="flex items-center justify-center px-4 py-10 overflow-y-auto">
+        <div class="w-full max-w-sm">
+
+            <h1 class="text-2xl font-bold text-gray-900">
+                Welcome Back
             </h1>
-            <p class="mt-2 text-sm text-gray-600">
-                Welcome back, please login to your account
+            <p class="mt-1 text-sm text-gray-600">
+                Login to continue reading
             </p>
 
-            <!-- Form -->
-            <form class="mt-8 space-y-4">
-                <!-- Email -->
+            <form class="mt-6 space-y-3">
+
                 <div>
-                    <label class="block text-sm font-medium text-gray-700">
-                        Email
-                    </label>
+                    <label class="text-sm text-gray-700">Email</label>
                     <input type="email"
-                           placeholder="you@example.com"
-                           class="mt-1 w-full rounded-lg border border-gray-300 px-4 py-3
-                                  focus:border-indigo-500 focus:ring-indigo-500">
+                        class="mt-1 w-full rounded-md border px-3 py-2 text-sm
+                               focus:border-indigo-500 focus:ring-indigo-500"
+                        placeholder="you@example.com">
                 </div>
 
-                <!-- Password -->
                 <div>
-                    <label class="block text-sm font-medium text-gray-700">
-                        Password
-                    </label>
+                    <label class="text-sm text-gray-700">Password</label>
                     <input type="password"
-                           placeholder="••••••••"
-                           class="mt-1 w-full rounded-lg border border-gray-300 px-4 py-3
-                                  focus:border-indigo-500 focus:ring-indigo-500">
+                        class="mt-1 w-full rounded-md border px-3 py-2 text-sm
+                               focus:border-indigo-500 focus:ring-indigo-500"
+                        placeholder="••••••••">
                 </div>
 
-                <!-- Forgot password -->
-                <div class="flex justify-end">
-                    <a href="#" class="text-sm text-indigo-600 hover:underline">
+                <div class="text-right">
+                    <a href="#" class="text-xs text-indigo-600 hover:underline">
                         Forgot password?
                     </a>
                 </div>
 
-                <!-- Login Button -->
                 <button type="button"
-                        onclick="window.location.href='{{ route('explorebooks') }}'"
-                        class="w-full rounded-lg bg-indigo-600 py-3 text-white
-                            font-semibold hover:bg-indigo-700 transition">
+                    onclick="window.location.href='{{ route('explorebooks') }}'"
+                    class="w-full rounded-md bg-indigo-600 py-2.5 text-sm
+                    font-semibold text-white hover:bg-indigo-700 transition">
                     Log in
                 </button>
-
             </form>
 
-            <!-- Social Login, Sign up, etc… -->
+            <p class="mt-5 text-center text-sm text-gray-600">
+                Belum punya akun?
+                <a href="{{ route('register') }}"
+                   class="text-indigo-600 font-medium hover:underline">
+                    Sign up
+                </a>
+            </p>
+
         </div>
     </div>
+
 </div>
 
 </body>

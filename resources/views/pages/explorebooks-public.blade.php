@@ -58,7 +58,7 @@
         </nav>
     </header>
 
-    <!-- SECTION 3-->
+    <!-- SECTION 1-->
    <section class="mt-16"> 
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
@@ -74,7 +74,7 @@
         <!-- GRID CARD -->
         <div class="mt-6 flex flex-wrap gap-x-4 gap-y-6">
             <!-- CARD -->
-            <a href="/detail"
+            <a href="/detail-public"
             class="group block w-40 flex-shrink-0 rounded-xl transition
                     hover:-translate-y-1 hover:shadow-lg focus:outline-none">
 
@@ -106,7 +106,7 @@
                 </div>
             </a>
 
-            <a href="/detail"
+            <a href="/detail-public"
             class="group block w-40 flex-shrink-0 rounded-xl transition
                     hover:-translate-y-1 hover:shadow-lg focus:outline-none">
 
@@ -138,7 +138,7 @@
                 </div>
             </a>
 
-            <a href="/detail"
+            <a href="/detail-public"
             class="group block w-40 flex-shrink-0 rounded-xl transition
                     hover:-translate-y-1 hover:shadow-lg focus:outline-none">
 
@@ -170,7 +170,7 @@
                 </div>
             </a>
 
-            <a href="/detail"
+            <a href="/detail-public"
             class="group block w-40 flex-shrink-0 rounded-xl transition
                     hover:-translate-y-1 hover:shadow-lg focus:outline-none">
 
@@ -202,7 +202,7 @@
                 </div>
             </a>
 
-            <a href="/detail"
+            <a href="/detail-public"
             class="group block w-40 flex-shrink-0 rounded-xl transition
                     hover:-translate-y-1 hover:shadow-lg focus:outline-none">
 
@@ -234,7 +234,7 @@
                 </div>
             </a>
 
-            <a href="/detail"
+            <a href="/detail-public"
             class="group block w-40 flex-shrink-0 rounded-xl transition
                     hover:-translate-y-1 hover:shadow-lg focus:outline-none">
 
@@ -284,7 +284,7 @@
         <!-- GRID CARD -->
         <div class="mt-6 flex flex-wrap gap-x-4 gap-y-6">
             <!-- CARD -->
-            <a href="/detail"
+            <a href="/detail-public"
             class="group block w-40 flex-shrink-0 rounded-xl transition
                     hover:-translate-y-1 hover:shadow-lg focus:outline-none">
 
@@ -316,7 +316,7 @@
                 </div>
             </a>
 
-            <a href="/detail"
+            <a href="/detail-public"
             class="group block w-40 flex-shrink-0 rounded-xl transition
                     hover:-translate-y-1 hover:shadow-lg focus:outline-none">
 
@@ -348,7 +348,7 @@
                 </div>
             </a>
 
-            <a href="/detail"
+            <a href="/detail-public"
             class="group block w-40 flex-shrink-0 rounded-xl transition
                     hover:-translate-y-1 hover:shadow-lg focus:outline-none">
 
@@ -380,7 +380,7 @@
                 </div>
             </a>
 
-            <a href="/detail"
+            <a href="/detail-public"
             class="group block w-40 flex-shrink-0 rounded-xl transition
                     hover:-translate-y-1 hover:shadow-lg focus:outline-none">
 
@@ -412,7 +412,7 @@
                 </div>
             </a>
 
-            <a href="/detail"
+            <a href="/detail-public"
             class="group block w-40 flex-shrink-0 rounded-xl transition
                     hover:-translate-y-1 hover:shadow-lg focus:outline-none">
 
@@ -444,7 +444,7 @@
                 </div>
             </a>
 
-            <a href="/detail"
+            <a href="/detail-public"
             class="group block w-40 flex-shrink-0 rounded-xl transition
                     hover:-translate-y-1 hover:shadow-lg focus:outline-none">
 
@@ -478,7 +478,7 @@
         </div>
     </section>
 
-    <!-- SECTION 2-->
+    <!-- SECTION 3-->
    <section class="mt-16"> 
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
@@ -494,7 +494,7 @@
         <!-- GRID CARD -->
         <div class="mt-6 flex flex-wrap gap-x-4 gap-y-6">
             <!-- CARD -->
-            <a href="/detail"
+            <a href="/detail-public"
             class="group block w-40 flex-shrink-0 rounded-xl transition
                     hover:-translate-y-1 hover:shadow-lg focus:outline-none">
 
@@ -526,7 +526,7 @@
                 </div>
             </a>
 
-            <a href="/detail"
+            <a href="/detail-public"
             class="group block w-40 flex-shrink-0 rounded-xl transition
                     hover:-translate-y-1 hover:shadow-lg focus:outline-none">
 
@@ -558,7 +558,7 @@
                 </div>
             </a>
 
-            <a href="/detail"
+            <a href="/detail-public"
             class="group block w-40 flex-shrink-0 rounded-xl transition
                     hover:-translate-y-1 hover:shadow-lg focus:outline-none">
 
@@ -590,7 +590,7 @@
                 </div>
             </a>
 
-            <a href="/detail"
+            <a href="/detail-public"
             class="group block w-40 flex-shrink-0 rounded-xl transition
                     hover:-translate-y-1 hover:shadow-lg focus:outline-none">
 
@@ -622,7 +622,7 @@
                 </div>
             </a>
 
-            <a href="/detail"
+            <a href="/detail-public"
             class="group block w-40 flex-shrink-0 rounded-xl transition
                     hover:-translate-y-1 hover:shadow-lg focus:outline-none">
 
@@ -654,7 +654,7 @@
                 </div>
             </a>
 
-            <a href="/detail"
+            <a href="/detail-public"
             class="group block w-40 flex-shrink-0 rounded-xl transition
                     hover:-translate-y-1 hover:shadow-lg focus:outline-none">
 

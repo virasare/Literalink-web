@@ -103,145 +103,96 @@
 
         <!-- PAGE CONTENT -->
         <main class="flex-1 overflow-y-auto p-6">
-    
-            <div class="max-w-6xl mx-auto px-6 py-8">
-                {{-- <!-- BREADCRUMB -->
-                <nav class="text-sm text-gray-500 mb-6">
-                <ol class="flex items-center gap-2">
-                    <li>
-                    <a href="/explore" class="hover:text-blue-600">Explore Books</a>
-                    </li>
-                    <li>/</li>
-                    <li>
-                    <a href="/explore/self-improvement" class="hover:text-blue-600">
-                        Self Improvement
-                    </a>
-                    </li>
-                    <li>/</li>
-                    <li class="text-gray-900 font-medium">
-                    Atomic Habits
-                    </li>
-                </ol>
-                </nav> --}}
+            
+            <div class="max-w-7xl mx-auto">
 
-            <!-- HERO -->
-            <div class="flex gap-8">
+            <!-- PAGE TITLE -->
+            <div class="mb-8">
+                <h1 class="text-2xl font-bold text-gray-900">
+                Saved Books
+                </h1>
+                <p class="text-gray-600 text-sm mt-1">
+                Continue reading your saved books
+                </p>
+            </div>
+
+            <!-- BOOK GRID -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+
+                <!-- CARD -->
+                <div class="bg-white rounded-xl p-3 shadow-sm hover:shadow-md transition">
 
                 <!-- Cover -->
                 <img src="/images/books/atomic-habits.jpg"
-                    class="w-48 h-72 rounded-lg object-cover shadow"
-                    alt="Book Cover">
+                    alt="Atomic Habits"
+                    class="w-full h-60 object-cover rounded-lg mb-3">
 
-                <!-- Info -->
-                <div class="flex flex-col gap-3">
-                <h1 class="text-3xl font-bold text-gray-900">
+                <!-- Title -->
+                <h3 class="text-sm font-semibold text-gray-900 leading-tight">
                     Atomic Habits
-                </h1>
+                </h3>
 
-                <p class="text-gray-600">
-                    by James Clear
+                <!-- Author -->
+                <p class="text-xs text-gray-500 mt-1">
+                    James Clear
                 </p>
 
                 <!-- Rating -->
-                <div class="flex items-center gap-1 text-yellow-400">
-                    ★★★★★
-                    <span class="ml-2 text-sm text-gray-600">4.8</span>
+                <div class="flex items-center gap-1 text-yellow-400 text-sm mt-1">
+                    ★★★★☆
+                    <span class="text-xs text-gray-500 ml-1">4.8</span>
                 </div>
 
                 <!-- Genre -->
-                <div class="flex gap-2 text-sm">
-                    <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded">
+                <span class="inline-block mt-2 px-2 py-1 text-xs
+                            bg-blue-100 text-blue-600 rounded-full">
                     Self Improvement
-                    </span>
-                    <span class="px-2 py-1 bg-green-100 text-green-600 rounded">
-                    Free
-                    </span>
-                </div>
+                </span>
 
                 <!-- CTA -->
-                <button type="button"
-                    onclick="window.location.href='{{ route('read') }}'"
-                    class="mt-4 w-fit bg-blue-600 text-white px-6 py-3 rounded-lg
-                                font-semibold hover:bg-blue-700 transition">
-                    Read Now
+                <button class="mt-3 w-full bg-blue-600 text-white
+                                text-sm py-2 rounded-lg
+                                hover:bg-blue-700 transition">
+                    Continue Reading
                 </button>
+
                 </div>
 
-            </div>
+                <!-- DUPLICATE CARD -->
+                <div class="bg-white rounded-xl p-3 shadow-sm hover:shadow-md transition">
 
-              <!-- SYNOPSIS -->
-            <div class="mt-12">
-                <h2 class="text-xl font-semibold text-gray-900 mb-3">
-                Synopsis
-                </h2>
-                <p class="text-gray-700 leading-relaxed">
-                Atomic Habits is a practical guide on how small changes
-                can lead to remarkable results...
+                <img src="/images/books/deep-work.jpg"
+                    class="w-full h-60 object-cover rounded-lg mb-3">
+
+                <h3 class="text-sm font-semibold">
+                    Deep Work
+                </h3>
+
+                <p class="text-xs text-gray-500 mt-1">
+                    Cal Newport
                 </p>
+
+                <div class="flex items-center gap-1 text-yellow-400 text-sm mt-1">
+                    ★★★★☆
+                    <span class="text-xs text-gray-500 ml-1">4.5</span>
+                </div>
+
+                <span class="inline-block mt-2 px-2 py-1 text-xs
+                            bg-purple-100 text-purple-600 rounded-full">
+                    Productivity
+                </span>
+
+                <button class="mt-3 w-full bg-blue-600 text-white
+                                text-sm py-2 rounded-lg
+                                hover:bg-blue-700 transition">
+                    Continue Reading
+                </button>
+
+                </div>
+
             </div>
 
-            <!-- ABOUT -->
-            <div class="mt-8">
-                <h2 class="text-xl font-semibold text-gray-900 mb-3">
-                About
-                </h2>
-                <p class="text-gray-700 leading-relaxed">
-                Written by James Clear, Atomic Habits focuses on building
-                good habits and breaking bad ones...
-                </p>
             </div>
-
-              <!-- NEXT SERIES -->
-            <div class="mt-14">
-                <h2 class="text-xl font-semibold text-gray-900 mb-4">
-                Next in Series
-                </h2>
-
-                <div class="flex gap-4">
-                <div class="w-40">
-                    <img src="/images/books/series-2.jpg"
-                        class="h-56 w-full object-cover rounded-lg">
-                    <h3 class="mt-2 text-sm font-semibold">
-                    Atomic Habits 2
-                    </h3>
-                </div>
-
-                <div class="w-40">
-                    <img src="/images/books/series-3.jpg"
-                        class="h-56 w-full object-cover rounded-lg">
-                    <h3 class="mt-2 text-sm font-semibold">
-                    Atomic Habits 3
-                    </h3>
-                </div>
-                </div>
-            </div>
-            
-              <!-- REVIEWS -->
-            <div class="mt-14">
-                <h2 class="text-xl font-semibold text-gray-900 mb-4">
-                Reviews
-                </h2>
-
-                <div class="space-y-4">
-
-                <div class="border rounded-lg p-4">
-                    <div class="flex items-center gap-3 mb-2">
-                    <img src="/images/avatar.png"
-                        class="w-8 h-8 rounded-full">
-                    <div>
-                        <p class="font-semibold text-sm">vira ariv</p>
-                        <p class="text-yellow-400 text-xs">★★★★★</p>
-                    </div>
-                    </div>
-                    <p class="text-gray-700 text-sm">
-                    Buku ini bener-bener ngerubah cara aku bangun kebiasaan.
-                    </p>
-                </div>
-
-                </div>
-            </div>
-
-            </div> <!-- END max-w -->
 
 
         </main>

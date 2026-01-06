@@ -20,20 +20,20 @@
         <!-- Navigation -->
         <nav class="flex-1 px-2 py-4 space-y-2">
             <!-- Active button style: bg-blue-100 border-l-4 border-blue-600 -->
-            <a href="#"
+            <a href="{{ route(name: 'explorebooks') }}"
                class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-100
                 bg-blue-100 border-l-4 border-blue-600">
                 Explore Books
             </a>
-            <a href="#"
+            <a href="{{ route('savedbooks') }}"
                class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-100">
                 Saved Books
             </a>
-            <a href="#"
+            <a href="{{ route('activity') }}"
                class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-100">
                 Activity
             </a>
-            <a href="#"
+            <a href="{{ route('community') }}"
                class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-100">
                 Community
             </a>
@@ -44,7 +44,7 @@
     <div class="flex-1 flex flex-col">
 
         <!-- HEADER -->
-        <header class="flex items-center justify-between px-6 py-4 bg-white border-b border-gray-200 sticky top-0 z-10">
+        <header class="flex items-center justify-between px-6 py-4 bg-F9F9F9 border-b border-gray-200 sticky top-0 z-10">
             
             <!-- Search bar -->
             <div class="flex-1">
@@ -68,35 +68,48 @@
                 </button>
 
                 <!-- Profile dropdown -->
-                <div class="relative">
-                    <button class="flex items-center gap-2 rounded-lg hover:bg-gray-100 px-2 py-1">
-                        <img src="{{ asset('images/Avatars.png') }}" alt="Profile" class="h-16 w-16 rounded-full">
+                <div class="relative" id="profileDropdown">
+
+                    <!-- Button -->
+                    <button type="button"
+                        id="profileButton"
+                        class="flex items-center gap-2 rounded-lg hover:bg-gray-100 px-2 py-1">
+                        
+                        <img src="{{ asset('images/Avatars.png') }}"
+                            class="h-10 w-10 rounded-full"
+                            alt="Profile">
+
                         <div class="hidden md:flex flex-col text-left">
                             <span class="text-sm font-medium">Vira Sare</span>
                             <span class="text-xs text-gray-500">vira@example.com</span>
                         </div>
-                        ▼
+
+                        <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M19 9l-7 7-7-7"/>
+                        </svg>
                     </button>
 
-                    <!-- Dropdown menu -->
-                    <div class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg hidden group-hover:block">
-                        <a href="#"
-                           class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    <!-- Dropdown -->
+                    <div id="dropdownMenu"
+                        class="absolute right-0 mt-2 w-48 bg-white border border-gray-200
+                            rounded-lg shadow-lg hidden z-50">
+
+                        <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">
                             Edit Profile
                         </a>
-                        <a href="#"
-                           class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                        <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">
                             Settings
                         </a>
-                        <a href="#"
-                           class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                        <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">
                             About Us
                         </a>
-                        <a href="#"
-                           class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100">
+                        <hr>
+                        <a href="/" class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100">
                             Log out
                         </a>
                     </div>
+
                 </div>
 
             </div>
@@ -745,6 +758,21 @@
     </div>
 
 </div>
+
+
+<script>
+    const button = document.getElementById('profileButton');
+    const menu = document.getElementById('dropdownMenu');
+
+    button.addEventListener('click', (e) => {
+        e.stopPropagation();
+        menu.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', () => {
+        menu.classList.add('hidden');
+    });
+</script>
 
 </body>
 </html>
